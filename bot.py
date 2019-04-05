@@ -19,7 +19,7 @@ def get_adjective(start_letter):
     try:
         with open(start_letter+".txt", 'r') as f:
             lines = int(f.readline())
-            index = random.randint(0, lines)
+            index = random.randint(0, lines - 1)
             for x in range(index):
                 f.readline()
             return f.readline().strip()
