@@ -1,3 +1,4 @@
 from telegram.ext import Updater
+import os
 
-updater = Updater(token='TOKEN', use_context=True)
+updater = Updater(token=os.enrivon['TOKEN'], use_context=True)
